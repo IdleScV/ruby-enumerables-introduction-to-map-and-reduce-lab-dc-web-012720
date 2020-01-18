@@ -20,8 +20,7 @@ def reduce_to_total(src, x=0)
 end
 
 def reduce_to_all_true(src)
-  count = 0
-  src.reduce{|x| x == TRUE 
+  src.reduce{|x, | x == TRUE 
      count += 1
   }
   return  count ==  src.length
