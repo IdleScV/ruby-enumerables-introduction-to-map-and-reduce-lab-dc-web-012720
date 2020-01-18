@@ -21,9 +21,8 @@ end
 
 def reduce_to_all_true(src)
   count = 0
-  src.reduce{|x| if x != TRUE 
-     count ++
-    
+  src.reduce{|x| x == TRUE 
+     count += 1
   }
   return  count ==  src.length
 end
