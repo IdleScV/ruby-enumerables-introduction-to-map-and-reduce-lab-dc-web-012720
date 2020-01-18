@@ -25,7 +25,7 @@ def reduce_to_all_true(src)
 end
 
 def reduce_to_any_true(src)
- return src.reduce{|ac, x|  }
+ src.any?
 end
 
 
