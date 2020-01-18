@@ -23,7 +23,7 @@ def reduce_to_all_true(src)
   count = 0
   src.reduce{|x| if x != TRUE 
      count ++
-    end
+    
   }
   return  count ==  src.length
 end
