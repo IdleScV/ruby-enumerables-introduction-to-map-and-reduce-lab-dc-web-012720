@@ -20,8 +20,10 @@ def reduce_to_total(src, x=0)
 end
 
 def reduce_to_all_true(src)
-  return src.reduce{|x, i| i == TRUE 
+  src.reduce{|x|if x == false
+    return false
   }
+  return true
  
 end
 
