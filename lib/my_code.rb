@@ -20,7 +20,7 @@ def reduce_to_total(src, x=0)
 end
 
 def reduce_to_all_true(src)
- return src.reduce{|e| !!e}
+ return src.reduce{|x, e| !!e}
  
 end
 
